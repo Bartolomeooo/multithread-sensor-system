@@ -42,7 +42,7 @@ public class Buffer {
     public SensorData getData() {
         lock.lock();
         try {
-            return new SensorData(data.getTemperature(), data.getHumidity(), data.getPressure());
+            return data;
         } finally {
             lock.unlock();
         }

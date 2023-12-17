@@ -1,5 +1,5 @@
 import system.SensorSystem;
-import ui.SensorDisplay;
+import ui.SensorSystemWindow;
 import javax.swing.SwingUtilities;
 
 public class Main {
@@ -8,7 +8,7 @@ public class Main {
         sensorSystem.startSensors();
 
         SwingUtilities.invokeLater(() -> {
-            SensorDisplay display = new SensorDisplay(sensorSystem.getBuffer());
+            SensorSystemWindow display = new SensorSystemWindow(sensorSystem.getBuffer());
             display.setVisible(true);
         });
     }

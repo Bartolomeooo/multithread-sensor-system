@@ -1,15 +1,11 @@
 package data;
 
-import sensors.Sensor;
-
 public class SensorData {
     private double temperature;
     private double humidity;
     private double pressure;
 
-    public SensorData() {
-
-    }
+    public SensorData() {}
 
     public SensorData(double temperature, double humidity, double pressure) {
         this.temperature = temperature;
